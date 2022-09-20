@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артемий  Максалиев](https://up.htmlacademy.ru/htmlcss/35/user/1894105).
-* Наставник: [Виктор Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
+* Наставник: [Виктор Рыбаков:)](https://htmlacademy.ru/profile/viktor-rybakov).
 
 ---
 
