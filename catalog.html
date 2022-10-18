@@ -50,7 +50,9 @@
       </nav>
     </header>
     <!--Main-catalog.html-->
-    <main class="main-catalog">
+    <main class="main-catalog main-container">
+      <div class="page-container">
+        <div class="page-container-catalog">
       <h1 class="catalog-header-title">Гостиницы Седоны</h1>
       <!--Information-->
       <ul class="main-catalog-information">
@@ -90,7 +92,7 @@
           </ul>
         </fieldset>
         <!--Information_housing-->
-        <fieldset class="Infrastructure-main-list">
+        <fieldset class="Infrastructure-main-list-housing">
           <legend class="Infrastructure-title">Тип жилья</legend>
           <ul class="Infrastructure-list">
 
@@ -117,11 +119,12 @@
         <!--Cost-->
         <fieldset>
           <legend class="Infrastructure-title-cost">Стоимость, ₽:</legend>
-          <input type="range">
+          <input class="range" type="range">
         </fieldset>
         <button class="button-blue-catalog" type="submit">Применить</button>
         <button class="button-transparent" type="reset">Сбросить</button>
       </form>
+    </div>
 
       <span class="list-head">Найдено гостиниц: 38</span>
       <!--Cost_select-->
@@ -241,37 +244,40 @@
           <button class="button-blue" type="submit">Подписаться</button>
         </form>
       </article>
+      </div>
     </main>
     <!--FOOTER-->
     <footer class="footer-list">
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <ul class="contact-list">
+      <div class="page-footer-container">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <ul class="contact-list">
 
-          <li class= "footer-navigation">
-            <a href="https://vk.com/htmlacademy">
-              <img src="img/vk.svg" class="footer-logo-vk" width="24px" height="14px" alt="Логотип HTML-vk">
-            </a>
-          </li>
+            <li class= "footer-navigation">
+              <a href="https://vk.com/htmlacademy">
+                <img src="img/vk.svg" class="footer-logo-vk" width="24px" height="14px" alt="Логотип HTML-vk">
+              </a>
+            </li>
 
-          <li class= "footer-navigation">
-            <a href="https://t.me/htmlacademy ">
-              <img src="img/tg.svg" class="footer-logo-telegram" width="18px" height="15.1px" alt="Логотип HTML-telegram">
-            </a>
-          </li>
+            <li class= "footer-navigation">
+              <a href="https://t.me/htmlacademy ">
+                <img src="img/tg.svg" class="footer-logo-telegram" width="18px" height="15.1px" alt="Логотип HTML-telegram">
+              </a>
+            </li>
 
-          <li class= "footer-navigation">
-            <a href="https://www.youtube.com/user/htmlacademyru">
-              <img src="img/youtube.svg" width="22px" height="17px" class="footer-logo-youtube" alt="Логотип HTML-youtube">
-            </a>
-          </li>
-        </ul>
+            <li class= "footer-navigation">
+              <a href="https://www.youtube.com/user/htmlacademyru">
+                <img src="img/youtube.svg" width="22px" height="17px" class="footer-logo-youtube" alt="Логотип HTML-youtube">
+              </a>
+            </li>
+          </ul>
+        </section>
 
-        <a class="contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
-            <a href="https://htmlacademy.ru/">
-              <img src="img/HTML Academy.svg" width="114.9px" height="32.9px" class="footer-logo-academy" alt="Логотип HTML-Академии">
-            </a>
-      </section>
+          <a class="contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+              <a href="https://htmlacademy.ru/">
+                <img src="img/HTML Academy.svg" width="114.9px" height="32.9px" class="footer-logo-academy" alt="Логотип HTML-Академии">
+              </a>
+      </div>
     </footer>
   </body>
 </html>

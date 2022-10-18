@@ -14,7 +14,14 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
+html{
+  height: 100%;
+}
 body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family:"PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -28,6 +35,28 @@ body{
   color: #000000;
 }
 /*Block_navigation_left*/
+.header-logo{
+  width: 140px;
+  margin-right: 44px;
+}
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list-left{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width:439px ;
+}
+.navigation-list-right{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 368px;
+  margin-left: auto;
+}
 .navigation-link{
   font-family:"PT Sans", sans-serif;
   color: #000000;
@@ -43,7 +72,7 @@ body{
 .button-white{
   font-family: 'PT Sans', sans-serif;
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: 700hero;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -51,13 +80,33 @@ body{
   background-color: #756157;
 }
 /*Main-index.html*/
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-container{
+  flex-grow: 1;
+}
+.welcome-logo{
+  display: block;
+  margin: 0 auto;
+}
 .main-index{
+  background-position: absolute, absolute;
   color:#000000 ;
   background-color:#FFFFFF ;
-  background-image: url(../img/index-background.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
+
+.hero{
+  background-image: url(../img/Vector-fon.svg),url(../img/index-background.jpg);
+  background-position: bottom, center;
+  background-size: 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  width: 1200px;
+  height: 485px;
+  min-height: 485px;
+}
+
 .small-city{
   font-weight: 700;
   font-size: 30px;
@@ -66,15 +115,47 @@ body{
   text-transform: uppercase;
 }
 /*ADVANTAGES*/
+.advantages-title-white{
+  width: 400px;
+}
+.advantages-picture-white{
+  width: 400px;
+}
+.advantages-item-point-1{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 auto;
+  background-color:#82B3D3 ;
+}
+.advantages-item-point-3{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 auto;
+  background-color:#82B3D3 ;
+}
+.advantages-item-point{
+  width: 400px ;
+  background-color:rgba(131, 179, 211, 0.12) ;
+}
+.advantages-item-point-white{
+  background: rgba(131, 179, 211, 0.20);
+  width: 400px;
+}
+.advantages-list{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.ADVANTAGES_point-2{
+  display: flex;
+  justify-content: space-between;
+}
 .advantages-main{
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
-}
-.advantages-list{
-  text-align: center;
 }
 .advantages-title-white{
   font-weight: 700;
@@ -99,6 +180,10 @@ body{
 /*recommendations*/
 .recommendation-list{
   text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 .recommendation-title{
   font-weight: 700;
@@ -109,6 +194,11 @@ body{
 
 }
 /*BLOCK-INTEREST*/
+.interest-block{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.button-interest
 .interest{
   font-weight: 700;
   font-size: 30px;
@@ -160,13 +250,25 @@ body{
   background-color: #82B3D3;
 }
 /*FOOTER*/
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.contacts{
+  width: 200px;
+  margin-right: 54px;
+}
+
 .contacts-phone{
   font-size: 40px;
-line-height: 40px;
+  line-height: 40px;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  width: 331px;
+  margin-right: 235.5px;
 }
 
 
@@ -180,12 +282,23 @@ line-height: 40px;
   background-image: url(../img-catalog/Фильтр.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 1200px;
+  margin: 0 auto;
+
 }
 .catalog-header-title{
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  width: 494.4px;
+}
+.page-container-catalog{
+  width:1060px;
+  margin:0 auto;
+}
+.range{
+  width:287px ;
 }
 .catalog-information-link{
   font-size: 16px;
@@ -202,6 +315,15 @@ line-height: 40px;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+
+}
+.Infrastructure-main-list{
+  width:150.43px;
+  margin-right:70px
+}
+.Infrastructure-main-list-housing{
+  width: 170px;
+  margin-right: 150px;
 }
 /*Cost*/
 .Infrastructure-title-cost{
