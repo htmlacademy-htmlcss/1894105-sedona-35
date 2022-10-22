@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="style/style.css">
+    <base href="https://htmlacademy-htmlcss.github.io/1894105-sedona-35/6/">
+</head>
+  <!--BODY-->
+  <body>
+    <header class="main-header">
+      <!--Block_navigation_left-->
+      <nav class="navigation">
+        <a class="header-logo" href="index.html">
+          <img src="img/logo.svg" width="140px" height="70.05px" alt="логотип сайта Sedona">
+        </a>
+
+        <ul class="navigation-list-left">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">О седоне</a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <!--Block_navigation_right-->
+        <ul class="navigation-list-right">
+          <li class="navigation-item">
+            <a class="navigation-link-2" href="catalog.html">
+              <img src="img/search.svg" width="20px" height="20px" alt="поиск">
+            </a>
+          </li>
+
+          <li class="navigation-item search">
+            <a class="navigation-link-2" href="catalog.html">
+              <img src="img/Vector.svg" width="20px" height="20px" alt="Понравилось">
+            </a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-button" href="#" style="text-decoration: none;">
+              <button class="button-white"; style="margin-top: 14px;">ХОЧУ СЮДА!</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main-catalog.html-->
+    <main class="main-catalog main-container">
+      <div class="page-container">
+        <div class="page-container-catalog">
+      <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+      <!--Information-->
+      <ul class="main-catalog-information">
+        <li class="catalog-information-item">
+          <a class="catalog-information-link home" href="index.html ">
+            <img src="img-catalog/Vector-home.svg" alt="главная" width="12px" height="12px">
+          </a>
+      </li>
+      <li class="catalog-information-item">
+        <a class="catalog-information-link">Гостиницы</a>
+      </li>
+      </ul>
+      <!--Information_Infrastructure-->
+      <form class="Infrastructure" action="https://echo.htmlacademy.ru/" method="get">
+        <section class="Infrastructure-section">
+        <fieldset class="Infrastructure-main-list">
+          <section class="main-footer-2">
+          <legend class="Infrastructure-title">Инфраструктура</legend>
+          <ul class="Infrastructure-list">
+
+            <li class="Infrastructure-item">
+              <label class="Infrastructure-option">
+                <input class="Infrastructure-input" type="checkbox" name="pool">Бассейн
+              </label>
+            </li>
+
+            <li class="Infrastructure-item">
+              <label class="Infrastructure-option">
+                <input class="Infrastructure-input" type="checkbox" name="parking">Парковка
+              </label>
+            </li>
+
+            <li class="Infrastructure-item">
+              <label class="Infrastructure-option">
+                <input class="Infrastructure-input" type="checkbox" name="wi-fi">Wi-Fi
+              </label>
+            </li>
+
+          </ul>
+        </fieldset>
+        <!--Information_housing-->
+        <fieldset class="Infrastructure-main-list-housing">
+          <legend class="Infrastructure-title">Тип жилья</legend>
+          <ul class="Infrastructure-list">
+
+            <li class="Infrastructure-item">
+              <label class="Infrastructure-option">
+                <input class="Infrastructure-input" type="radio" name="hotel">Гостиницы
+              </label>
+            </li>
+
+            <li class="Infrastructure-item">
+              <label class="Infrastructure-option">
+                <input class="Infrastructure-input" type="radio" name="motel">Мотель
+              </label>
+            </li>
+
+            <li class="Infrastructure-item">
+              <label class="Infrastructure-option">
+                <input class="Infrastructure-input" type="radio" name="apartments">Апартаменты
+              </label>
+            </li>
+
+          </ul>
+        </fieldset>
+      </section>
+        <!--Cost-->
+        <fieldset>
+          <section class="range-input">
+          <legend class="Infrastructure-title-cost">Стоимость, ₽:</legend>
+          <input class="range" type="range">
+        </section>
+        </fieldset>
+        <button class="button-blue-catalog" type="submit">Применить</button>
+        <button class="button-transparent" type="reset">Сбросить</button>
+      </section>
+      </form>
+    </div>
+    <section class="block-3">
+      <section class="block-4">
+      <span class="list-head">Найдено гостиниц: 38</span>
+      </section>
+      <!--Cost_select-->
+      <select class="select-control" aria-labelledby="Сортировка">
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="costly">Сначала дорогое</option>
+        <option value="popular">Сначала популярное</option>
+      </select>
+      <section class="mini-menu">
+      <a href="#" class="button-item">
+        <img src="img-catalog/Vector-catalog-1 (1).svg" width="16px" height="14px" alt="карточки">
+      </a>
+      <a href="#" class="button-item">
+        <img src="img-catalog/Vector-catalog-2 (1).svg" width="16px" height="14px" alt="список">
+      </a>
+      <a href="#" class="button-item">
+        <img src="img-catalog/Vector-catalog-3 (1).svg" width="16px" height="14px" alt="строчка">
+      </a>
+    </section>
+    </section>
+      <!--Hotel-list-->
+      <ul class="hotel-list">
+        <li class="hotel-item">
+          <a class="hotel-link" href="catalog.html">
+            <img src="img-catalog/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
+            <h3 class="hotel">Amara Resort & Spa</h3>
+          </a>
+          <span class="hotel-1">Гостиница</span>
+          <span class="hotel-cost">От 4000 ₽</span>
+          <a class="button hotel-button brown-button-catalog" href="#">Подробнее</a>
+          <a class="button hotel-button blue-button-catalog" href="#">В избранное</a>
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <span class="rating">Рейтинг: 8,5</span>
+        </li>
+
+        <li class="hotel-item">
+          <a class="hotel-link" href="catalog.html">
+            <img src="img-catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
+            <h3 class="hotel">Villas at Poco Diablo</h3>
+          </a>
+          <span class="hotel-1">Гостиница</span>
+          <span class="hotel-cost">От 5000 ₽</span>
+          <a class="button hotel-button brown-button-catalog " href="#">Подробнее</a>
+          <a class="button hotel-button green-button-catalog" href="#">В избранном</a>
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <span class="rating">Рейтинг: 9,2</span>
+        </li>
+
+        <li class="hotel-item">
+          <a class="hotel-link" href="catalog.html">
+            <img src="img-catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
+            <h3 class="hotel">Desert Quail Inn</h3>
+          </a>
+          <span class="hotel-1">Гостиница</span>
+          <span class="hotel-cost">От 2500 ₽</span>
+          <a class="button hotel-button brown-button-catalog" href="#">Подробнее</a>
+          <a class="button hotel-button blue-button-catalog" href="#">В избранное</a>
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <span class="rating">Рейтинг: 6,9</span>
+        </li>
+
+        <li class="hotel-item">
+          <a class="hotel-link" href="catalog.html">
+            <img src="img-catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
+            <h3 class="hotel">GreenTree Inn</h3>
+          </a>
+          <span class="hotel-1">Гостиница</span>
+          <span class="hotel-cost">От 1500 ₽</span>
+          <a class="button hotel-button brown-button-catalog" href="#">Подробнее</a>
+          <a class="button hotel-button blue-button-catalog" href="#">В избранное</a>
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <span class="rating">Рейтинг: 5,0</span>
+        </li>
+      </ul>
+
+      <!--numbering-->
+      <div class="pagination-container">
+        <ul class="numbering">
+          <li class="numbering-item">
+            <a class="numbering-link black" href="#">1</a>
+          </li>
+          <li class="numbering-item">
+            <a class="numbering-link" href="#">2</a>
+          </li>
+          <li class="numbering-item">
+            <a class="numbering-link" href="#">3</a>
+          </li>
+          <li class="numbering-item">
+            <a class="numbering-link" href="#">4</a>
+          </li>
+          <li class="numbering-item">
+            <a class="numbering-link" href="#">...</a>
+          </li>
+          <li class="numbering-item">
+            <a class="numbering-link" href="#">10</a>
+          </li>
+        </ul>
+        </div>
+      <!--sending mail-->
+      <article class="mail-catalog">
+        <h2 class="submit-text">Подпишитесь на рассылку</h2>
+        <p class="submit-item">Только полезная информация и никакого спама,
+          <br>честное бойскаутское!
+        </p>
+        <section class="ss">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text" name="@mail" id="subscribe-input" placeholder="Ваш e-mail">
+          <button class="button-blue" type="submit">Подписаться</button>
+        </form>
+      </section>
+      </article>
+      </div>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer-list">
+      <div class="page-footer-container">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <ul class="contact-list">
+
+            <li class= "footer-navigation">
+              <a href="https://vk.com/htmlacademy" class="nav vk" >
+                <img src="img/vk.svg" class="footer-logo-vk" width="24px" height="14px" alt="Логотип HTML-vk">
+              </a>
+            </li>
+
+            <li class= "footer-navigation">
+              <a href="https://t.me/htmlacademy " class="nav">
+                <img src="img/tg.svg" class="footer-logo-telegram" width="18px" height="15.1px" alt="Логотип HTML-telegram">
+              </a>
+            </li>
+
+            <li class= "footer-navigation">
+              <a href="https://www.youtube.com/user/htmlacademyru" class="nav">
+                <img src="img/youtube.svg" width="22px" height="17px" class="footer-logo-youtube" alt="Логотип HTML-youtube">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="telephone">
+          <a class="contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+        </section>
+            <section class="academy">
+              <a href="https://htmlacademy.ru/">
+                <img src="img/HTML Academy.svg" width="114.9px" height="32.9px" class="footer-logo-academy" alt="Логотип HTML-Академии">
+              </a>
+            </section>
+      </div>
+    </footer>
+  </body>
+</html>
