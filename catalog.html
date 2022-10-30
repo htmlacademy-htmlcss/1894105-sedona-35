@@ -96,7 +96,7 @@
         <!--Information_housing-->
         <fieldset class="Infrastructure-main-list-housing">
           <legend class="Infrastructure-title">Тип жилья</legend>
-          <ul class="Infrastructure-list">
+          <ul class="house-infrastructure-list">
 
             <li class="Infrastructure-item">
               <label class="Infrastructure-option">
@@ -120,17 +120,20 @@
         </fieldset>
       </section>
         <!--Cost-->
-        <fieldset>
-          <section class="range-input">
+        <fieldset class="price price-1">
           <legend class="Infrastructure-title-cost">Стоимость, ₽:</legend>
-          <input class="range" type="range">
-        </section>
+
+
+          <input class="min-price" type="number"  name="min-price" value="0" placeholder="от">
+
+          <input class="max-price" type="number"  name="max-price" value="9000"  placeholder="до">
         </fieldset>
+        <div class="price search-filter-buttons">
         <button class="button-blue-catalog" type="submit">Применить</button>
         <button class="button-transparent" type="reset">Сбросить</button>
-      </section>
+        </div>
       </form>
-    </div>
+
     <section class="block-3">
       <section class="block-4">
       <span class="list-head">Найдено гостиниц: 38</span>
@@ -157,63 +160,87 @@
       <ul class="hotel-list">
         <li class="hotel-item">
           <a class="hotel-link" href="catalog.html">
-            <img src="img-catalog/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
-            <h3 class="hotel">Amara Resort & Spa</h3>
+            <img class="photo" src="img-catalog/hotel-1.jpg"  alt="Amara Resort & Spa">
           </a>
-          <span class="hotel-1">Гостиница</span>
-          <span class="hotel-cost">От 4000 ₽</span>
+          <h3 class="hotel">Amara Resort & Spa</h3>
+          <div class="hotel-class">
+          <p class="hotel-1">Гостиница</p>
+          <p class="hotel-cost">От 4000 ₽</p>
+          </div>
           <a class="button hotel-button brown-button-catalog" href="#">Подробнее</a>
           <a class="button hotel-button blue-button-catalog" href="#">В избранное</a>
-          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
-          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
-          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
-          <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <div class="rating-star">
+          <div class="star">
+          <img  src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img  src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img  src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          <img  src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+        </div>
           <span class="rating">Рейтинг: 8,5</span>
+        </div>
         </li>
 
         <li class="hotel-item">
           <a class="hotel-link" href="catalog.html">
-            <img src="img-catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
-            <h3 class="hotel">Villas at Poco Diablo</h3>
+            <img class="photo" src="img-catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
           </a>
-          <span class="hotel-1">Гостиница</span>
-          <span class="hotel-cost">От 5000 ₽</span>
+          <h3 class="hotel">Villas at Poco Diablo</h3>
+          <div class="hotel-class">
+          <p class="hotel-1">Гостиница</p>
+          <p class="hotel-cost">От 5000 ₽</p>
+        </div>
           <a class="button hotel-button brown-button-catalog " href="#">Подробнее</a>
           <a class="button hotel-button green-button-catalog" href="#">В избранном</a>
+          <div class="rating-star">
+          <div class="star">
           <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
           <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
           <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
           <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+        </div>
           <span class="rating">Рейтинг: 9,2</span>
+          </div>
         </li>
 
         <li class="hotel-item">
           <a class="hotel-link" href="catalog.html">
-            <img src="img-catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
-            <h3 class="hotel">Desert Quail Inn</h3>
+            <img class="photo" src="img-catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
           </a>
-          <span class="hotel-1">Гостиница</span>
-          <span class="hotel-cost">От 2500 ₽</span>
+          <h3 class="hotel">Desert Quail Inn</h3>
+          <div class="hotel-class">
+          <p class="hotel-1">Гостиница</p>
+          <p class="hotel-cost">От 2500 ₽</p>
+        </div>
           <a class="button hotel-button brown-button-catalog" href="#">Подробнее</a>
           <a class="button hotel-button blue-button-catalog" href="#">В избранное</a>
+          <div class="rating-star">
+          <div class="star">
           <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
           <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
           <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+        </div>
           <span class="rating">Рейтинг: 6,9</span>
+        </div>
         </li>
 
         <li class="hotel-item">
           <a class="hotel-link" href="catalog.html">
-            <img src="img-catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
-            <h3 class="hotel">GreenTree Inn</h3>
+            <img class="photo" src="img-catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
           </a>
-          <span class="hotel-1">Гостиница</span>
-          <span class="hotel-cost">От 1500 ₽</span>
+          <h3 class="hotel">GreenTree Inn</h3>
+          <div class="hotel-class">
+          <p class="hotel-1">Гостиница</p>
+          <p class="hotel-cost">От 1500 ₽</p>
+        </div>
           <a class="button hotel-button brown-button-catalog" href="#">Подробнее</a>
           <a class="button hotel-button blue-button-catalog" href="#">В избранное</a>
+          <div class="rating-star">
+          <div class="star">
           <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
           <img src="img-catalog/Vector.svg" width="18px" height="17px" alt="звёзды">
+          </div>
           <span class="rating">Рейтинг: 5,0</span>
+        </div>
         </li>
       </ul>
 
@@ -247,9 +274,11 @@
           <br>честное бойскаутское!
         </p>
         <section class="ss">
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text" name="@mail" id="subscribe-input" placeholder="Ваш e-mail">
-          <button class="button-blue" type="submit">Подписаться</button>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-container">
+            <input class="subscribe-input" type="text" name="@mail" id="subscribe-input" placeholder="Ваш e-mail">
+            <button class="button-blue" type="submit">Подписаться</button>
+          </div>
         </form>
       </section>
       </article>
@@ -261,7 +290,6 @@
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="contact-list">
-
             <li class= "footer-navigation">
               <a href="https://vk.com/htmlacademy" class="nav vk" >
                 <img src="img/vk.svg" class="footer-logo-vk" width="24px" height="14px" alt="Логотип HTML-vk">
