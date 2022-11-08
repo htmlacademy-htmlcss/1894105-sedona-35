@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="style/style.css">
   </head>
   <!--BODY-->
-  <body>
+  <div class="page-container">
+  <body data-test="header">
     <header class="main-header">
       <!--Block_navigation_left-->
       <nav class="navigation">
-        <a class="header-logo" href="index.html">
-          <img src="img/logo.svg" width="140px" height="70.05px" alt="логотип сайта Sedona">
-        </a>
-
+        <div class="header-logo-link">
+          <a  href="index.html">
+            <img src="img/logo.svg" class="header-logo" width="140px" height="70.05px" alt="логотип сайта Sedona">
+          </a>
+        </div>
         <ul class="navigation-list-left">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -28,16 +30,19 @@
           </li>
         </ul>
         <!--Block_navigation_right-->
+        <div class="navigation-blok-2">
         <ul class="navigation-list-right">
           <li class="navigation-item">
             <a class="navigation-link-2" href="catalog.html">
-              <img src="img/search.svg" width="20px" height="20px" alt="поиск">
+              <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m18.5 17-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87A8 8 0 0 0 8.5.5C4.1.5.5 4.18.5 8.56a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" fill="#000"/></svg>
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
 
           <li class="navigation-item search">
-            <a class="navigation-link-2" href="catalog.html">
-              <img src="img/Vector.svg" width="20px" height="20px" alt="Понравилось">
+            <a class="navigation-link-3" href="catalog.html">
+              <svg aria-hidden="true" focusable="false" width="44" height="64" viewBox="0 0 44 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9 41a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9a5.4 5.4 0 0 1 4.4-8.7c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/><rect x="20" y="11" width="20" height="20" rx="10" fill="#7DB54F"/><path d="M25.13 24.26h1.4v-4.84l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37V25h-3.55v-.74Zm8.83-4.67c0 .35-.07.72-.2 1.09a10.88 10.88 0 0 1-1.21 2.21c-.26.35-.52.69-.78 1.01l-.49.43v.04l.64-.11h2.18V25h-3.98v-.29a33.15 33.15 0 0 0 1.17-1.32 15.09 15.09 0 0 0 1.25-1.83c.18-.32.32-.64.43-.95.1-.31.16-.61.16-.89 0-.33-.1-.6-.28-.81-.19-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.45.22-.62.35l-.33-.57c.23-.2.51-.36.83-.47.32-.11.66-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z" fill="#fff"/></svg>
+              <span class="visually-hidden">💖изброное</span>
             </a>
           </li>
 
@@ -47,6 +52,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </nav>
     </header>
     <!--Main-index.html-->
@@ -54,9 +60,9 @@
       <div class="page-container">
         <section class="hero">
           <h1 class="visually-hidden">Welcome to Sedona</h1>
-          <section class="welcome">
+          <div class="welcome">
             <img class="welcome-logo" src="img/welcome.svg" width="458px" height="352px" alt="Приветствующая надпись">
-        </section>
+          </div>
         </section>
         <section class="city-1">
           <p class="small-city">Седона — небольшой городок в Аризоне,
@@ -135,7 +141,7 @@
             </section>
             </li>
 
-            <li class="recommendation-item advantages-item advantages-item-point">
+            <li class="recommendation-item advantages-item advantages-item-point-white-1">
               <section class="recommendation-flex-2">
               <img class="eat" src="img/food.svg" width="74px" height="70px" alt="еда">
               <h3 class="recommendation-title ">Еда</h3>
@@ -164,7 +170,7 @@
           <p class="interest-item">Укажите предполагаемые даты поездки,
             <br>и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <button class="button-interest" type="submit" >ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+          <button class="button-interest" type="submit" >Поиск Гостиницы в седоне</button>
         </section>
         <!--sending mail-->
         <article class="mail">
@@ -176,48 +182,49 @@
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="form-container">
               <input class="subscribe-input" type="text" name="1mail" id="subscribe-input" placeholder="Ваш e-mail">
-              <button class="button-blue" type="submit">Подписаться</button>
+              <button class="button-blue submit-mail" type="submit">Подписаться</button>
             </div>
             </form>
         </section>
         </article>
-      </div>
+    </div>
     </main>
     <!--FOOTER-->
-    <footer class="footer-list">
+    <footer class="footer-list" data-test="footer">
       <div class="page-footer-container">
-        <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <ul class="contact-list">
+          <section class="net-contact">
+            <ul class="contact-list">
+              <li class= "footer-navigation">
+                <a href="https://vk.com/htmlacademy" class="nav vk" >
+                  <svg aria-hidden="true" focusable="false" width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.95.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.19-.95-.74-.95H9.65c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H1.4C.65 0 .5.35.5.73c0 .68.89 4.07 4.14 8.55C6.81 12.34 9.87 14 12.65 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C19.61 13.22 19.9 14 20.9 14h2.63c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.22-3.02-.6-.7-1.53-1.47-1.8-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" fill="#83B3D3"/></svg>
+                  <span class="visually-hidden"> vk</span></a>
+                </a>
+              </li>
 
-            <li class= "footer-navigation">
-              <a href="https://vk.com/htmlacademy" class="nav vk" >
-                <img src="img/vk.svg" class="footer-logo-vk" width="24px" height="14px" alt="Логотип HTML-vk">
-              </a>
-            </li>
+              <li class= "footer-navigation">
+                <a href="https://t.me/htmlacademy " class="nav">
+                  <svg aria-hidden="true" focusable="false" width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.29.1 1.34 6.25c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18L7.55 9.96l-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8C18.72.27 18-.23 17.29.09Z" fill="#83B3D3"/></svg>
+                  <span class="visually-hidden"> tg</span></a>
+                </a>
+              </li>
 
-            <li class= "footer-navigation">
-              <a href="https://t.me/htmlacademy " class="nav">
-                <img src="img/tg.svg" class="footer-logo-telegram" width="18px" height="15.1px" alt="Логотип HTML-telegram">
-              </a>
-            </li>
-
-            <li class= "footer-navigation">
-              <a href="https://www.youtube.com/user/htmlacademyru" class="nav">
-                <img src="img/youtube.svg" width="22px" height="17px" class="footer-logo-youtube" alt="Логотип HTML-youtube">
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="telephone">
+              <li class= "footer-navigation">
+                <a href="https://www.youtube.com/user/htmlacademyru" class="nav">
+                  <svg aria-hidden="true" focusable="false"  width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.1.5H3.68C1.81.5.5 2.1.5 3.9V14c0 1.9 1.31 3.5 3.17 3.5h15.66c1.64 0 3.17-1.6 3.17-3.4V3.9C22.28 2.1 20.97.5 19.1.5ZM8.17 13.04V4.96L15.5 9l-7.34 4.04Z" fill="#83B3D3"/></svg>
+                  <span class="visually-hidden"> YouTube</span></a>
+                </a>
+              </li>
+            </ul>
+          </section>
           <a class="contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
-        </section>
-            <section class="academy">
-              <a href="https://htmlacademy.ru/">
-                <img src="img/HTML Academy.svg" width="114.9px" height="32.9px" class="footer-logo-academy" alt="Логотип HTML-Академии">
-              </a>
-            </section>
+
+          <a href="https://htmlacademy.ru/">
+            <img src="img/HTML Academy.svg" width="114.9px" height="32.9px" class="footer-logo-academy" alt="Логотип HTML-Академии">
+          </a>
+
       </div>
     </footer>
+  </div>
   </body>
 </html>
