@@ -16,10 +16,20 @@
   }
 html{
   height: 100%;
-  box-sizing: border-box;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100%;
 
-.page-container{
+}
+.page-container {
   width: 1200px;
   background-color: #FFFFFF;
   flex-grow: 1;
@@ -28,21 +38,6 @@ html{
   margin-left: auto;
   margin-right: auto;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
-  border: none;
-}
-body{
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  font-family:"PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-weight: 400;
-  font-style: normal;
-  width: 1200px;
-  margin: 0 auto;
 }
 .main-header{
   min-height: 64px;
@@ -429,6 +424,7 @@ body{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-color: #FFFFFF;
 }
 .page-footer-container{
   display: flex;
@@ -442,11 +438,14 @@ body{
 }
 .contact-list{
   display: flex;
+  margin: auto 0;
   list-style-type: none;
   align-self: stretch;
   width: 142px;
-  height: 40px;
-  margin-bottom: 5px;
+  height: 50px;
+  padding-left:0 ;
+  align-items: center;
+
 }
 .footer-navigation .nav{
   color: #000000;
@@ -461,6 +460,7 @@ body{
 }
 .contacts-phone{
   display: block;
+  margin: auto 0;
   color: #000000;
   width: 720px;
   height: 50px;
@@ -513,9 +513,10 @@ body{
   background-position: center;
   margin-bottom: 50px;
 }
-.home{
-  padding: 0.5px 0.5px 2.5px 0.5px;
-  margin-left:28.5 ;
+li{list-style-type: none;}
+.Vector{
+  margin-right: 10.8px;
+  list-style-type: none;
 }
 .catalog-header-title{
   font-weight: 700;
@@ -537,6 +538,7 @@ body{
 .catalog-information-link{
   font-size: 16px;
   color: #FFFFFF;
+  text-align: left;
 }
 .main-footer-2{
   width: 150.43px;
@@ -556,7 +558,7 @@ body{
 }
 .Infrastructure-section{
   display: flex;
-  margin-right:70px;
+  margin-right:140px;
 }
 .Infrastructure-title{
   font-weight: 700;
@@ -582,8 +584,8 @@ body{
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  width: 142px;
-  height: 40px;
+  min-height: 110px;
+  min-width: 110px;
   padding-top: 32px;
 }
 .Infrastructure-main-list{
@@ -628,7 +630,7 @@ body{
 }
 .block-3{
   display: flex;
-  margin: 0 ;
+  margin: auto 0;
   padding: 0 ;
   width: 1060px;
   height: 49px;
@@ -638,19 +640,16 @@ body{
 
 }
 .block-4{
-  margin-top: 50px;
-  width: 438px;
+  width: 338px;
   height: 36px;
-  margin-bottom:40px ;
 }
 .select-control{
-  margin-left: 100px;
+  margin-left: 200px;
   width:292px ;
-  min-height: 49px;
-  padding: 14px 20px;
-  margin-top: 50px;
+  height: 49px;
+  padding: 12px 20px;
+
   margin-right: 70px;
-  margin-bottom: 46.5px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   font-family: 'PT Sans';
@@ -660,12 +659,10 @@ body{
   line-height: 21px;
 }
 .mini-menu{
-  width: 190px;
+  display: flex;
+  width: 160px;
   height: 48px;
-  margin-top: 67px;
-  padding: 14px 12px;
-  margin-bottom: 40px;
-
+  text-align: right
 }
 .button-item-black{
   padding: 14px 12px;
@@ -674,6 +671,7 @@ body{
   border: 2px solid #000000;
   border-radius: 4px;
   cursor: pointer;
+
 }
 .button-item{
   padding: 14px 12px;
@@ -734,9 +732,9 @@ body{
   padding-top:0;
   padding-bottom: 0;
   margin: 0;
-  margin-left: 65px;
   width: 288px;
   height: 160px;
+  margin-right: 70px;
 }
 .price-range{
   position: absolute;
@@ -769,7 +767,6 @@ body{
   border: none;
   height: 36px;
   text-align: center;
-  padding: 8px 50px;
   margin-top: 56px;
   margin-bottom: 32px;
   cursor: pointer;
