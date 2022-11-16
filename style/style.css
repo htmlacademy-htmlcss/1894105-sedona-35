@@ -100,9 +100,6 @@ body {
 .navigation-link:hover{
   border-bottom: 2px solid #756257;
 }
-.navigation-link.current {
-  border-bottom: 2px solid #756257;
-}
 /*Block_navigation_right*/
 .navigation-blok-2{
   margin-left:285px ;
@@ -1220,9 +1217,6 @@ li{list-style-type: none;}
 
 
 /*Footer_2*/
-.popover-content-close{
-  display: none;
-}
 .popover-content{
   position: fixed;
   top:0;
@@ -1233,7 +1227,7 @@ li{list-style-type: none;}
   background-color: rgba(242, 242, 242, 0.8);
 }
 .window{
-  /* width: 717px; */
+  width: 717px;/**/
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   padding: 67px 70px 64px 70px;
@@ -1593,6 +1587,7 @@ opacity: 0,5;
 .departure-input-wrapper:hover .date-button{
   background-color: rgb(230, 230, 230);
 }
-/* .modal-container-close{
+
+ .popover-content-close{
   display: none;
-} */
+}
