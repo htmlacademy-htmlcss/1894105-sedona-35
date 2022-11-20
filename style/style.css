@@ -531,7 +531,7 @@ body {
   align-self: center;
 }
 .subscribe{
-  text-align: center;
+  margin-left: 258px;
 }
 .ss{
   text-align:center;
@@ -1292,6 +1292,7 @@ body {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: none;
+  text-align:;
 }
 .contacts-phone:visited{
   opacity: 0,9;
