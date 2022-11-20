@@ -538,6 +538,7 @@ body {
   margin-bottom: 149px;
 }
 .button-blue{
+  font-family: 'PT Sans' sans-serif;
   width: 232px;
   height: 52px;
   font-weight: 700;
@@ -1276,8 +1277,9 @@ body {
 }
 .form-container{
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 684px;
+  height: 52px;
 }
 .submit-mail{
   border: none;
